@@ -8,7 +8,7 @@ pipeline {
         stage('First stage') {
             agent any
             steps {
-                sshagent(credentials: 'github') {
+                sshagent(credentials: ['github']) {
                     sh 'ssh -T git@github.com'
                 }
                 sleep 10000
