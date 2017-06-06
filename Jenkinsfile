@@ -9,6 +9,7 @@ pipeline {
             agent any
             steps {
                 sleep 10000
+                sh 'ssh -T git@github.com'
             }
         }
 
