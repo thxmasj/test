@@ -3,7 +3,9 @@ pipeline {
 
         stage('First stage') {
             agent any
-            sleep 10000
+            steps {
+                sleep 10000
+            }
         }
 
     }
