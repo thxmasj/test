@@ -1,7 +1,10 @@
 pipeline {
-  stages {
-    stage('First stage') {
-      sleep 10000
+    stages {
+
+        stage('First stage') {
+            agent any
+            sleep 10000
+        }
+
     }
-  }
 }
